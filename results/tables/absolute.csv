@@ -1,0 +1,7 @@
+session,condition,tests,game_mean_ms,game_p99_ms,window_s,updates_median,updates_min,updates_max,missed_per_update_median_pct,tests_with_missed_pct
+main,BASELINE,540,16.12,16.48,16.14,,,,,
+main,E_CORE,540,16.25,16.53,16.26,322.0,50.0,417.0,0.0,41.1
+main,P_SHARED,540,22.2,44.74,22.24,347.0,50.0,533.0,33.1,99.4
+main,P_SMT,540,11.37,17.47,11.39,208.0,50.0,360.0,0.0,28.3
+control,P_SMT,540,11.32,17.38,11.34,206.0,50.0,361.0,0.0,28.9
+control,SMT_IDLE,540,9.69,13.2,9.7,,,,,

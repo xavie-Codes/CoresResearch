@@ -1,0 +1,15 @@
+check,status,evidence
+Completeness,Pass,"Main: 2,160 rows in 540 blocks of 4 conditions. Control: 1,080 rows in 540 blocks of 2. 0 duplicate keys; every block ran contiguously (540 and 540 block runs)."
+Placement and affinity,Pass,"AI masks 0x1 (P_SHARED), 0x2 (P_SMT), 0x7F000 (E_CORE) and 0x0 for the no-AI controls; workers on LP 1-11, with LP 1's worker parked in P_SMT and SMT_IDLE; telemetry on LP 19; every affinity call verified."
+Calibration and drift,Pass,"Both sessions used loop count 338,571. Main pre-test frame 16.10 ± 0.12 ms, largest deviation 2.9% against the 15% tolerance; 0 drift flags in 3,240 tests."
+Model execution,Pass,"2,160 of 2,160 AI tests ran batched. One output checksum per model configuration across placements and trials (180 of 180), identical in the control session (180 of 180)."
+Sample sizes,Pass,"At least 1,000 game frames and 50 AI batches per test; 0 tests hit the 300 s cap."
+Repeatability,Pass,Median trial-to-trial variation is at most 0.6% for mean game frame time and 1.7% for mean AI batch time in any condition.
+Cross-session replication,Pass,"P_SMT, measured in both sessions, differs by a median -0.8% in game frame time (Spearman 0.99) and -0.8% in AI batch time (Spearman 1.000)."
+Order and carry-over,Pass,BASELINE frame time does not depend on which condition ran before it (Kruskal-Wallis p = 0.41).
+P_SMT control,Pass,"Resolved by the control session: P_SMT is now compared with SMT_IDLE in the same block. The idle sibling alone gives a 13.2 ms P99 against a 9.4 ms median, which is why BASELINE could not serve as P_SMT's control."
+Thermal operating point,Disclose,"Both sessions sat at the thermal limit: package 94.7 and 94.7 °C on average, throttling flag set in 99.9% and 100% of HWiNFO rows, about 45.3 W with PL1 and PL2 at 200 W."
+Slow drift,Disclose,Main-session BASELINE frame time rose about 0.2 ms (1.2%) over 12 h while package power fell 0.6 W at constant temperature. Pairing within blocks limits its effect (drift_order.csv).
+HWiNFO,Disclose,"Main session: package power and per-core clocks changed only every 80-109 s (median over the test phase; 71-186 s in its first and last hour), so they are used at session level only. Control session: every sensor refreshed every 2 s and is used per test."
+PDH telemetry columns,Disclose,"PowerMeter reads 0 W in every test, and the ACPI thermal zone, which is not the CPU package sensor, changes only in 1-K steps (per-test means 96.05-97.05 °C); drop both. RAPL package power is valid per test. % Processor Performance is a mean over P-core LPs, so compare it only between conditions with the same busy LPs (not P_SMT against SMT_IDLE)."
+Tail metrics,Disclose,"With 1,000 frames the P99.9 value is the second-largest frame. Use P99 as the main tail metric."

@@ -1,0 +1,4 @@
+session,tests,hours,pkg_temp_mean_c,pkg_temp_max_c,pkg_throttle_pct,pcore0_throttle_pct,pkg_power_w,pcore0_clock_mhz,pl1_w,pcore0_clock_refresh,baseline_mean_frame_ms,baseline_drift_ms,rapl_pkg_w_baseline,procperf_p_baseline
+main,2160,11.99,94.7,97,99.9,0.0,45.9,3192.0,200.0,109 s,16.122,0.201,45.33,109.2
+control,1080,3.77,94.7,97,100.0,0.0,45.8,3192.0,200.0,2.0 s,,,,
+validation,432,2.62,94.7,97,100.0,0.0,45.1,3092.0,200.0,2.0 s,16.188,-0.11,44.84,108.7

@@ -1,0 +1,24 @@
+id,value,raw,description
+mflop_min,4.0,4.0416,Smallest work per batch over the 180 configurations (MFLOP)
+mflop_max,"53,331",53330.5344,Largest work per batch over the 180 configurations (MFLOP)
+telemetry_ms_main,111,111.31366732586244,"Main session: PDH telemetry interval, median over tests (ms)"
+telemetry_ms_control,112,111.53423438182611,"Control session: PDH telemetry interval, median over tests (ms)"
+ecore_outlier_pct,30.5,30.458851335678073,Largest E_CORE vs BASELINE mean-frame change of any block (%)
+ecore_outlier_block,"I=10, H=64, L=2, A=100, trial 3","I=10, H=64, L=2, A=100, trial 3",Block of that change
+ecore_outlier_duty_pct,9,9.13,E-core AI duty cycle in that block (%)
+ecore_second_pct,2.4,2.386312751878217,Second-largest E_CORE vs BASELINE mean-frame change (%)
+few_batch_tests,216,216,Main-session AI tests with fewer than 100 batches (nearest-rank P99 = maximum)
+few_batch_min_mflop,"4,485",4485.2736,Smallest work per batch among those tests (MFLOP)
+few_batch_min_p99_ms,165.2,165.1903,Smallest P99 batch time among those tests (ms)
+few_batch_p99_is_max,216,216,"Of those tests, P99 equals the maximum"
+idle_p99_over_median_pct,40.2,40.15847265057728,"SMT_IDLE: P99 frame above the median frame of the same test, median over tests (%)"
+base_p99_over_median_pct,2.5,2.470876804810218,"BASELINE: P99 frame above the median frame of the same test, median over tests (%)"
+base_pcore_perf,109.2,109.16655,"BASELINE P-core % Processor Performance, median over tests"
+smt_light_blocks,186,186,Blocks below 300 MFLOP per batch
+smt_light_ms,0.25,0.25180000000000025,"P_SMT vs SMT_IDLE mean frame below 300 MFLOP, median (ms)"
+smt_light_pct,2.6,2.5799678908884682,"Same, median change (%)"
+smt_light_under5_pct,80,80.10752688172043,Share of those blocks with a change under 5% (%)
+heavy_min_duty_pct,98.1,98.09,"Lowest AI duty cycle of any placement above 3,000 MFLOP per batch (P_SMT from the control session) (%)"
+smt_over_base_pct,29,29.444444444444446,Blocks whose control-session P_SMT mean frame exceeded the main-session BASELINE mean frame (%)
+acpi_peak_top_main,"2,159",2159,"Main session: tests whose ACPI thermal-zone peak equals the session maximum (97.05 °C), of 2,160"
+acpi_peak_top_control,"1,079",1079,"Control session: tests whose ACPI thermal-zone peak equals the session maximum (97.05 °C), of 1,080"

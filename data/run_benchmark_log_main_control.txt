@@ -1,0 +1,20 @@
+
+==== run_benchmark.bat started Sun 10/11/2026  4:19:01.69 ====
+AC power: Online
+Original power scheme: 381b4222-f694-41f0-9685-ff5bb260df2e
+WARN: High Performance plan not installed; staying on the current scheme
+Active during benchmark: Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+Services before run: wuauserv=0 SysMain=1
+Benchmark exit code: 0
+Restored: services wuauserv=0 SysMain=1, scheme=381b4222-f694-41f0-9685-ff5bb260df2e
+==== finished Sun 10/11/2026 16:22:17.00 (exit 0) ====
+
+==== run_benchmark.bat started Mon 10/12/2026  0:55:14.15 ====
+AC power: Online
+Original power scheme: 381b4222-f694-41f0-9685-ff5bb260df2e
+WARN: High Performance plan not installed; staying on the current scheme
+Active during benchmark: Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+Services before run: wuauserv=1 SysMain=1
+Benchmark exit code: 0
+Restored: services wuauserv=1 SysMain=1, scheme=381b4222-f694-41f0-9685-ff5bb260df2e
+==== finished Mon 10/12/2026  4:44:29.19 (exit 0) ====

@@ -1,0 +1,27 @@
+earlier_session,condition,measure,configs,median_diff_pct,min_pct,max_pct,within_5pct,validation_cost_median_ms,earlier_cost_median_ms,cost_spearman_rho,same_sign_configs
+main,BASELINE,game_mean,16,0.56,-0.19,1.18,16.0,,,,
+main,BASELINE,game_p99,16,0.61,0.11,1.81,16.0,,,,
+main,E_CORE,game_mean,16,0.55,-0.43,1.13,16.0,,,,
+main,E_CORE,game_p99,16,0.95,-0.18,3.58,16.0,,,,
+main,E_CORE,ai_mean,16,0.71,-0.08,1.66,16.0,,,,
+main,E_CORE,ai_p99,16,1.65,-7.05,8.84,8.0,,,,
+main,P_SHARED,game_mean,16,0.69,-1.21,2.59,16.0,,,,
+main,P_SHARED,game_p99,16,0.72,-3.35,4.42,16.0,,,,
+main,P_SHARED,ai_mean,16,0.33,-5.1,27.97,13.0,,,,
+main,P_SHARED,ai_p99,16,0.67,-3.69,79.53,13.0,,,,
+main,P_SMT,game_mean,16,0.45,-1.19,1.65,16.0,,,,
+main,P_SMT,game_p99,16,0.64,-5.27,3.12,15.0,,,,
+main,P_SMT,ai_mean,16,0.52,-0.28,1.46,16.0,,,,
+main,P_SMT,ai_p99,16,1.14,-0.47,4.01,16.0,,,,
+control,SMT_IDLE,game_mean,16,1.14,0.33,2.51,16.0,,,,
+control,SMT_IDLE,game_p99,16,0.24,-5.95,6.31,13.0,,,,
+control,P_SMT,game_mean,16,1.11,0.44,3.0,16.0,,,,
+control,P_SMT,game_p99,16,0.97,-6.59,6.25,11.0,,,,
+control,P_SMT,ai_mean,16,1.44,0.69,2.54,16.0,,,,
+control,P_SMT,ai_p99,16,1.66,0.35,10.42,15.0,,,,
+main,E_CORE - BASELINE,game_mean_cost_ms,16,,,,,0.147,0.165,0.812,13.0
+main,E_CORE - BASELINE,game_p99_cost_ms,16,,,,,0.156,0.062,0.262,13.0
+main,P_SHARED - BASELINE,game_mean_cost_ms,16,,,,,10.779,10.42,0.997,16.0
+main,P_SHARED - BASELINE,game_p99_cost_ms,16,,,,,42.951,42.067,0.988,16.0
+control,P_SMT - SMT_IDLE,game_mean_cost_ms,16,,,,,2.525,2.41,0.991,16.0
+control,P_SMT - SMT_IDLE,game_p99_cost_ms,16,,,,,4.933,4.51,0.95,15.0

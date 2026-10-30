@@ -1,0 +1,3 @@
+condition,lp0_usage_pct,lp1_usage_pct,lp1_eff_clock_mhz,pcore0_clock_mhz,package_power_w,package_temp_c
+P_SMT,99.76,45.33,1444.92,3179.55,46.19,94.66
+SMT_IDLE,99.53,1.91,33.0,3180.38,44.87,94.65

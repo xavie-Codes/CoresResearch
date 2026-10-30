@@ -1,0 +1,8 @@
+condition,batches,lps_seen,distinct_lps_per_test_median,lp_changed_within_batch_pct,lp_changed_between_batches_pct,LP 0 (game),LP 1 (sibling),"LP 2-11 (P, workers)",LP 12-18 (E),"LP 19 (E, telemetry)"
+E_CORE,17285,12 13 14 15 16 17 18,7,1.29,52.64,0.0,0.0,0.0,100.0,0.0
+P_SHARED,16025,0,1,0.0,0.0,100.0,0.0,0.0,0.0,0.0
+UNPINNED,17303,0 1 3 6 7 11 12 13 14 15 16 17 18 19,8,11.2,64.46,0.03,0.01,0.09,77.4,22.48
+E_CORE_1LP,17265,12,1,0.0,0.0,0.0,0.0,0.0,100.0,0.0
+P_SMT,18827,1,1,0.0,0.0,0.0,100.0,0.0,0.0,0.0
+E_CORE_SMT_IDLE,17317,12 13 14 15 16 17 18,7,2.08,51.34,0.0,0.0,0.0,100.0,0.0
+P_SHARED_SMT_IDLE,17340,0,1,0.0,0.0,100.0,0.0,0.0,0.0,0.0

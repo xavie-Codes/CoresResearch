@@ -1,0 +1,11 @@
+id,value,description
+same_block_order,True,The control session ran its 540 blocks in the same order as the main session
+main_frames_total,2258010,"Main session: game frames measured, all tests"
+control_frames_total,1091207,"Control session: game frames measured, all tests"
+main_batches_total,418600,"Main session: AI batches measured, all tests"
+control_batches_total,112537,"Control session: AI batches measured, all tests"
+shared_sat_blocks,153,Blocks in which the P_SHARED AI thread was busy over 99% of the window
+shared_sat_base_ms,16.15,"BASELINE mean frame of those blocks, median (ms)"
+idle_vs_base_p99_pct,24.9,"BASELINE P99 frame vs SMT_IDLE P99 frame of the same block, median change (%)"
+idle_mean_ms,9.69,"SMT_IDLE mean frame, median (ms)"
+smt_cfg_over_baseline,159,Blocks in which the P_SMT mean frame (control session) exceeded the BASELINE mean frame of the same block

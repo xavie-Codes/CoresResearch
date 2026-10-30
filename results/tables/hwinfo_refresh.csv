@@ -1,0 +1,13 @@
+phase_order,phase,samples,CPU package power,P-core 0 clock,E-core effective clock,CPU package temperature
+0,Main: Idle before run,4,2.0 s,2.0 s,2.0 s,4.0 s
+1,Main: Soak,91,1 update in 180 s,no update in 180 s,no update in 180 s,2.0 s
+2,"Main: Tests, first hour",1797,164 s,186 s,163 s,2.0 s
+3,"Main: Tests, last hour",1797,71 s,118 s,76 s,2.0 s
+4,"Main: Tests, all",21548,80 s,109 s,82 s,2.0 s
+5,Main: Idle after run,6998,2.0 s,2.0 s,2.0 s,2.0 s
+6,Control: Idle before run,23,2.0 s,2.0 s,2.0 s,2.0 s
+7,Control: Soak,91,2.0 s,2.0 s,2.0 s,2.0 s
+8,"Control: Tests, first hour",1797,2.0 s,2.0 s,2.0 s,2.0 s
+9,"Control: Tests, last hour",1797,2.0 s,2.0 s,2.0 s,2.0 s
+10,"Control: Tests, all",6766,2.0 s,2.0 s,2.0 s,2.0 s
+11,Control: Idle after run,1064,2.0 s,2.0 s,2.0 s,2.0 s

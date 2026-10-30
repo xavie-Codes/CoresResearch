@@ -1,0 +1,47 @@
+
+==================== Session 20261029-191126 ====================
+session_start            : 2026-10-29T19:11:26.193-05:00
+executable               : C:\Users\xavie\Desktop\Projects\Research\CoresResearch\LocalSequenceGameOptimizationCores\x64\Validation\LocalSequenceGameOptimizationCores.exe
+working_directory        : C:\Users\xavie\Desktop\Projects\Research\CoresResearch\LocalSequenceGameOptimizationCores\x64\Validation
+command_line             : C:\Users\xavie\Desktop\Projects\Research\CoresResearch\LocalSequenceGameOptimizationCores\x64\Validation\LocalSequenceGameOptimizationCores.exe --conditions BASELINE,SMT_IDLE,P_SMT,E_CORE,P_SHARED,E_CORE_SMT_IDLE,P_SHARED_SMT_IDLE,E_CORE_1LP,UNPINNED --configs validation_configs.txt --min-window-seconds 20 --trace validation_trace --csv benchmark_validation.csv --model-dir ..\Release\models_latest --seed 4242 --note room_C=25.556 C; msi_mode=Extreme Performance; cooler_boost=off; surface=alumunim stand, on a mousepad, on a desk. no cooling pad
+cpu_brand                : 12th Gen Intel(R) Core(TM) i9-12900H
+logical_processors       : 20 (active processor groups: 1)
+hybrid                   : yes (P physical 6, E physical 8)
+process_affinity_mask    : 0xFFFFF
+p_core_mask              : 0xFFF [0-11]
+e_core_mask              : 0xFF000 [12-19]
+game_lp (LP0)            : 0
+game_lp_smt_sibling      : 1
+worker_mask              : 0xFFE [1-11]
+housekeeping_lp          : 19
+e_core_ai_mask           : 0x7F000 [12-18]
+windows_version          : 10.0.26200.9711 (25H2)
+vbs_registry_config      : not set (registry configuration, not runtime state)
+hvci_registry_config     : Enabled=1 (registry configuration, not runtime state)
+onnxruntime_version      : 1.27.1
+compiler                 : MSVC _MSC_FULL_VER=193933519, built Oct 29 2026 01:15:06 (NDEBUG)
+ac_power                 : online (ACLineStatus=1, battery 100%)
+power_scheme             : 381b4222-f694-41f0-9685-ff5bb260df2e (Balanced)
+power_mode_overlay_ac    : ded574b5-45a0-4f42-8737-46345c09c238 (all-zero GUID = no overlay)
+priority_class           : HIGH_PRIORITY_CLASS (ok)
+power_throttling         : EXECUTION_SPEED + IGNORE_TIMER_RESOLUTION throttling disabled (ok)
+ai_pacing_timer          : high-resolution waitable timer (CREATE_WAITABLE_TIMER_HIGH_RESOLUTION)
+telemetry                : thermal=High Precision Temperature (0.1 K); power_meter=yes; rapl_pkg=yes; page_faults=yes; file_cache_faults=yes; interval_ms=100
+procperf_method          : per-LP instances split by topology (unweighted mean per cluster)
+rng_seed                 : 4242 (mt19937, implementation-independent Fisher-Yates)
+conditions               : BASELINE,SMT_IDLE,P_SMT,E_CORE,P_SHARED,E_CORE_SMT_IDLE,P_SHARED_SMT_IDLE,E_CORE_1LP,UNPINNED
+config                   : trials=3 min_game_frames=1000 min_ai_batches=50 max_ai_batches=2000 max_test_s=300 min_window_s=20 tick_ms=50 soak_s=180 drift_tolerance=0.15 target_frame_ms=16
+configs                  : 16 from validation_configs.txt: in10_H32_L1_A50 in10_H64_L2_A100 in1000_H32_L1_A50 in100_H128_L1_A100 in10_H32_L8_A200 in100_H256_L1_A100 in10_H512_L1_A50 in100_H64_L8_A200 in1000_H64_L4_A200 in10_H256_L2_A100 in100_H256_L2_A100 in1000_H256_L2_A50 in10_H256_L4_A50 in100_H256_L2_A200 in1000_H256_L2_A100 in1000_H512_L1_A100
+plan                     : 432 tests, 432 remaining at session start
+csv                      : benchmark_validation.csv
+trace                    : validation_trace_batches.csv, validation_trace_frames.csv
+tsc_hz                   : 2918398932 (AI_OnCPU_Share = thread cycles / tsc_hz / batch time)
+system_bios              : Micro-Star International Co., Ltd. Pulse GL66 12UEK | board MS-1583 | BIOS E1583IMS.108 (04/07/2022)
+operator_note            : room_C=25.556 C; msi_mode=Extreme Performance; cooler_boost=off; surface=alumunim stand, on a mousepad, on a desk. no cooling pad
+soak_seconds             : 180 (first 10.000 s median 15.148 ms -> last window median 16.198 ms at the pre-calibration loop count)
+calibrated_loop_count    : 338571 (loaded from calibrated_loops.txt)
+calibration_timestamp    : 2026-10-11T04:22:32.205-05:00
+calibration_median_ms    : 15.942
+sibling_parked_ref_ms    : 9.473 (P_SMT and SMT_IDLE drift reference)
+calibration_soak_seconds : 180
+session_end              : 2026-10-29T21:51:34.502-05:00 exit_code=0 written=432 skipped=0 drift_flags=0 truncated=0 per_agent_fallback_models=0

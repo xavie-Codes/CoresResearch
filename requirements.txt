@@ -1,0 +1,10 @@
+# Python 3.11.4, the versions used for the paper.
+# The analysis needs numpy, pandas, scipy, and matplotlib; the model export and the output check also need
+# torch, onnx, and onnxruntime. The models were exported with torch 2.7.1+cu118; the CPU build gives the same graphs.
+numpy==1.26.3
+pandas==2.2.3
+scipy==1.14.1
+matplotlib==3.9.2
+torch==2.7.1
+onnx==1.19.1
+onnxruntime==1.21.1

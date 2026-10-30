@@ -1,0 +1,15 @@
+window,condition,configs,configs_fit,configs_met,fit_but_missed,lowest_p99_with_miss_ms,met_updates_median,met_updates_min,tests_with_miss_pct,misses,late_start_share_of_misses_pct
+orig,E_CORE,16,11,7,4,46.55,973,972,45.8,1593,4.1
+orig,P_SHARED,16,4,0,4,0.91,0,0,100.0,6911,33.8
+orig,UNPINNED,16,12,8,4,44.89,974,969,43.8,1554,4.4
+orig,E_CORE_1LP,16,10,7,3,33.45,973,970,52.1,1867,7.0
+orig,P_SMT,16,14,14,0,50.83,709,591,12.5,1072,15.0
+orig,E_CORE_SMT_IDLE,16,13,12,1,49.42,590,588,22.9,850,0.5
+orig,P_SHARED_SMT_IDLE,16,7,2,5,0.67,611,606,79.2,3495,18.8
+equal20,E_CORE,16,11,7,4,46.55,1200,1200,47.9,1948,4.0
+equal20,P_SHARED,16,5,0,5,0.9,0,0,100.0,4955,39.6
+equal20,UNPINNED,16,11,8,3,44.89,1200,1200,43.8,1891,4.3
+equal20,E_CORE_1LP,16,10,7,3,33.33,1200,1200,52.1,2282,6.8
+equal20,P_SMT,16,14,14,0,50.89,1200,1200,12.5,1146,15.7
+equal20,E_CORE_SMT_IDLE,16,13,12,1,49.54,1200,1200,25.0,1738,1.0
+equal20,P_SHARED_SMT_IDLE,16,6,0,6,0.47,0,0,89.6,4045,23.0

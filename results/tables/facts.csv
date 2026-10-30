@@ -1,0 +1,75 @@
+id,value,raw,description
+pretest_mean,16.10,16.098171296296297,"Main session: mean pre-test frame (ms), non-SMT tests"
+pretest_sd,0.12,0.11913819329446235,"Main session: SD of pre-test frame (ms), non-SMT tests"
+pretest_max_dev,2.9,2.8706249999999933,Main session: largest pre-test deviation from the 16 ms target (%)
+drift_ms,0.2,0.20093452100129042,Main session: fitted BASELINE frame-time rise over the session (ms)
+drift_pct,1.2,1.2463683567467896,"Same, as % of the median"
+rapl_drop,0.6,0.6099999999999994,"Main session: BASELINE package power, first hour minus last hour (W)"
+session_hours,12,11.994796944444445,Main session: duration of the test phase (h)
+control_hours,3.8,3.7658461111111112,Control session: duration of the test phase (h)
+pkg_temp_mean,94.7,94.66753294969371,"Main session: HWiNFO package temperature, mean during tests (°C)"
+pkg_temp_max,97,97.0,"Main session: HWiNFO package temperature, max during tests (°C)"
+throttle_share,99.9,99.86541674401337,Main session: HWiNFO rows with package thermal throttling = Yes (%)
+pl_limit,200,200.0,PL1 and PL2 power limits reported by HWiNFO (W)
+rapl_base,45.3,45.3291,"Main session: BASELINE package power, median of per-test RAPL means (W)"
+pcore_clock_ghz,3.19,3.1921999999999997,"Main session: HWiNFO P-core 0 clock, median during tests (GHz)"
+c_pkg_temp_mean,94.7,94.66316878510197,"Control session: HWiNFO package temperature, mean during tests (°C)"
+c_throttle_share,100,100.0,Control session: HWiNFO rows with package thermal throttling = Yes (%)
+pcore0_throttle_share,0.0,0.0,Main session: HWiNFO rows with P-core 0 thermal throttling = Yes (%)
+c_pcore0_throttle_share,0.0,0.0,Control session: HWiNFO rows with P-core 0 thermal throttling = Yes (%)
+c_pkg_power,45.8,45.8000257168194,"Control session: HWiNFO package power, mean during tests (W)"
+c_pcore_clock_ghz,3.19,3.1921999999999997,"Control session: HWiNFO P-core 0 clock, median during tests (GHz)"
+carryover_p,0.41,0.4063848243963437,"Main session: Kruskal-Wallis p, BASELINE frame time by preceding condition"
+cv_game_max_cond,0.6,0.6435460764411423,Main session: largest per-condition median trial-to-trial CV of mean game frame (%)
+cv_ai_max_cond,1.7,1.7243077138162397,Main session: largest per-condition median trial-to-trial CV of mean AI batch time (%)
+ecore_mean_pct,0.75,0.75,E_CORE vs BASELINE: median change of mean game frame (%)
+ecore_mean_lo,0.62,0.62,E_CORE: 95% CI low (%)
+ecore_mean_hi,0.87,0.87,E_CORE: 95% CI high (%)
+ecore_p99_pct,0.3,0.33,E_CORE vs BASELINE: median change of P99 game frame (%)
+ecore_fit,60,60.2,E_CORE tests whose AI P99 batch time fits the 50 ms tick (%)
+shared_mean_pct,37.9,37.86,P_SHARED vs BASELINE: median change of mean game frame (%)
+shared_mean_lo,27.4,27.37,P_SHARED: 95% CI low (%)
+shared_mean_hi,63.9,63.94,P_SHARED: 95% CI high (%)
+shared_p99_pct,171,171.36,P_SHARED vs BASELINE: median change of P99 game frame (%)
+shared_fit,43,43.0,P_SHARED tests whose AI P99 batch time fits the 50 ms tick (%)
+smt_mean_pct,16.6,16.57,P_SMT vs SMT_IDLE: median change of mean game frame (%)
+smt_mean_lo,11.5,11.51,P_SMT: 95% CI low (%)
+smt_mean_hi,24.7,24.66,P_SMT: 95% CI high (%)
+smt_p99_pct,29.5,29.5,P_SMT vs SMT_IDLE: median change of P99 game frame (%)
+smt_fit,72,71.7,P_SMT tests whose AI P99 batch time fits the 50 ms tick (%)
+ecore_blocks_slower,90,89.81481481481481,Blocks where E_CORE mean frame > BASELINE (%)
+ecore_rapl,1.5,1.48,"E_CORE minus BASELINE package power, median (W)"
+ecore_perf,0.7,0.73,"Drop in P-core % performance under E_CORE, median (points)"
+ecore_sat_pct,1.2,1.164,E_CORE frame change when the E-core AI is saturated (%)
+shared_sat_mean,32.3,32.3388,P_SHARED mean frame when AI saturates LP0 (ms)
+shared_stall_plateau,59,59.425,P_SHARED P99 stall above BASELINE median once AI batches exceed ~30 ms (ms)
+shared_light_p99_pct,9,9.088920618525375,P_SHARED P99 change for the lightest models (AI batch < 2 ms) (%)
+smt_sat_mean_pct,91,90.594,P_SMT vs SMT_IDLE mean frame when the AI saturates LP 1 (%)
+smt_sat_p99_pct,45,44.711,P_SMT vs SMT_IDLE P99 frame when the AI saturates LP 1 (%)
+smt_sat_frame,18.5,18.481,P_SMT mean frame when the AI saturates LP 1 (ms)
+smt_low_mean_pct,0.6,0.611,P_SMT vs SMT_IDLE mean frame at AI duty < 2% (%)
+idle_median_ms,9.4,9.4133,SMT_IDLE median frame (ms)
+idle_p99_ms,13.2,13.20385,SMT_IDLE P99 frame (ms)
+base_frame_ms,16.1,16.1216,"BASELINE mean frame, median (ms)"
+base_p99_ms,16.5,16.4808,"BASELINE P99 frame, median (ms)"
+smt_worker_cost,66,66.34562238000431,BASELINE mean frame vs SMT_IDLE mean frame of the same block: cost of a physics worker on the sibling (%)
+idle_lp1_usage,1.9,1.91,Control session: HWiNFO LP 1 usage during SMT_IDLE tests (%)
+smt_lp1_usage,45,45.33,Control session: HWiNFO LP 1 usage during P_SMT tests (%)
+smt_power_w,1.3,1.26,"P_SMT minus SMT_IDLE package power, median (W)"
+rep_game_diff,-0.8,-0.76,"P_SMT game mean frame, control vs main session, median difference (%)"
+rep_ai_diff,-0.8,-0.85,"P_SMT AI mean batch, control vs main session, median difference (%)"
+rep_game_rho,0.99,0.992,"P_SMT game mean frame, Spearman rho between sessions"
+rep_ai_rho,1.000,0.9999,"P_SMT AI mean batch, Spearman rho between sessions"
+e_over_p_min,1.4,1.3505535055350555,"E-core / P-core-sibling AI batch time, minimum ratio"
+e_over_p_max,2.1,2.0561449579831934,"E-core / P-core-sibling AI batch time, maximum ratio"
+gflops_e,31,30.58762808486128,E-core inference throughput at hidden 512 (GFLOP/s)
+gflops_p,62,62.4521360990406,P-core-sibling inference throughput at hidden 512 (GFLOP/s)
+heaviest_e_s,1.7,1.730488,"Heaviest configuration, E-core mean AI batch time (s)"
+shared_ai_floor_ms,35,34.696,"P_SHARED AI batch P99 for models under 100 MFLOP per batch, median (ms)"
+smt_ai_light_ms,1.9,1.9385,"P_SMT AI batch P99 for models under 100 MFLOP per batch, median (ms)"
+hw_refresh_min,71,71.0,Main session: shortest median refresh of package power and the P-core 0 clock in the first or last test hour (s)
+hw_refresh_max,186,186.0,Main session: longest median refresh of package power and the P-core 0 clock in the first or last test hour (s)
+hw_refresh_session_min,80,80.0,"Main session: shortest median refresh over the whole test phase of package power, P-core 0 clock and E-core effective clock (s)"
+hw_refresh_session_max,109,109.0,"Same, longest (s)"
+acpi_mean_min,96.05,96.05,"ACPI thermal zone, lowest per-test mean, both sessions (°C)"
+acpi_mean_max,97.05,97.05,"ACPI thermal zone, highest per-test mean, both sessions (°C)"

@@ -1,0 +1,7 @@
+session,condition,tests,frames_min,frames_median,frames_max,batches_min,batches_median,batches_max,window_s_min,window_s_median,window_s_max,telemetry_samples_median,pretest_ms_mean,pretest_ms_sd,drift_ref_ms,pretest_max_dev_pct,session_gap_s_median,game_frames_total,ai_batches_total
+main,P_SHARED,540,1000,1000,2687,50,347,533,16.3,22.2,86.5,200,16.094,0.121,16.0,2.7,1.25,556949,170938
+main,E_CORE,540,1000,1000,5267,50,322,417,16.0,16.3,86.8,146,16.092,0.117,16.0,2.9,1.25,610062,134362
+main,P_SMT,540,1000,1000,2258,50,208,360,9.7,11.4,43.1,102,9.515,0.088,9.4728,2.5,1.25,550998,113300
+main,BASELINE,540,1000,1000,1001,,,,15.9,16.1,16.4,145,16.109,0.119,16.0,2.8,1.25,540001,
+control,SMT_IDLE,540,1000,1000,1022,,,,9.6,9.7,10.1,87,9.478,0.193,9.4728,9.0,0.79,540222,
+control,P_SMT,540,1000,1000,2253,50,206,361,9.6,11.3,42.1,101,9.473,0.199,9.4728,9.5,0.79,550985,112537

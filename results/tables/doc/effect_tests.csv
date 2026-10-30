@@ -1,0 +1,4 @@
+placement,control,blocks,mean_slower_pct,mean_wilcoxon_p,p99_slower_pct,p99_wilcoxon_p,power_higher_pct,power_wilcoxon_p,pcore_perf_lower_pct,pcore_perf_wilcoxon_p
+E_CORE,BASELINE,540,89.8,3.95e-82,83.3,1.88e-60,85.6,2.69e-69,90.0,3.30e-79
+P_SMT,SMT_IDLE,540,99.4,4.00e-90,88.7,5.37e-79,80.0,1.17e-58,,
+P_SHARED,BASELINE,540,100.0,3.72e-90,100.0,3.72e-90,71.5,8.08e-32,68.3,6.66e-24

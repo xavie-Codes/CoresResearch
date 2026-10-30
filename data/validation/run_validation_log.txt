@@ -1,0 +1,10 @@
+
+==== run_validation.bat started Thu 10/29/2026 19:10:31.20 ====
+AC power: Online
+Original power scheme: 381b4222-f694-41f0-9685-ff5bb260df2e
+Power plan Balanced, power mode overlay ded574b5-45a0-4f42-8737-46345c09c238
+Note: room_C=25.556 C; msi_mode=Extreme Performance; cooler_boost=off; surface=alumunim stand, on a mousepad, on a desk. no cooling pad
+Services before run: wuauserv=0 SysMain=0
+Benchmark exit code: 0
+Restored: services wuauserv=0 SysMain=0, scheme=381b4222-f694-41f0-9685-ff5bb260df2e
+==== finished Thu 10/29/2026 21:51:34.51 (exit 0) ====

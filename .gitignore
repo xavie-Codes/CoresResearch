@@ -1,0 +1,33 @@
+# Visual Studio, NuGet, and build output (harness/x64/Release is also where the launchers run)
+.vs/
+x64/
+LocalSeq.*/
+packages/
+*.obj
+*.pdb
+*.exe
+*.dll
+*.ipch
+*.vcxproj.user
+
+# Exported models: about 2 GB; regenerate with models/path_predicting_training.py
+*.onnx
+*.onnx.failed
+models_latest/
+models_archive_*/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.idea/
+
+# Regenerated analysis output
+out/
+
+# LaTeX build files
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.pdf
+paper/*.synctex.gz

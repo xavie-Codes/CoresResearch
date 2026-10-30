@@ -1,0 +1,18 @@
+item,value,source
+Laptop,"MSI Pulse GL66 12UEK (MS-1583), BIOS E1583IMS.108","msinfo32, HWiNFO"
+CPU,"12th Gen Intel(R) Core(TM) i9-12900H; 6 P-cores (12 threads) + 8 E-cores, 20 logical processors",run_metadata.txt
+Memory,"32 GB at 3200 MT/s (CL22, Gear 2)","msinfo32, HWiNFO"
+Operating system,Windows 11 Pro 10.0.26200.9457 (25H2); VBS and HVCI running,"run_metadata.txt, msinfo32"
+Inference runtime,"ONNX Runtime 1.27.1, CPU execution provider, 1 intra-op thread, sequential, ORT_ENABLE_ALL","run_metadata.txt, source"
+Compiler,"MSVC 19.39.33519 (Visual Studio 2022 17.9), x64 Release",run_metadata.txt
+Power,"AC; battery 100% (main) and 97% (control), not charging; Balanced scheme with the Best performance overlay; High Performance plan not installed","run_metadata.txt, run_benchmark_log.txt, HWiNFO"
+OEM mode,MSI Center Extreme Performance; PL1 and PL2 reported at 200 W,"your notes, HWiNFO"
+Background,Airplane mode on. Main session: SysMain stopped (Windows Update was not running). Control session: SysMain and Windows Update stopped,"your notes, run_benchmark_log.txt"
+Process,HIGH_PRIORITY_CLASS; power throttling (EcoQoS) disabled; high-resolution waitable timer for AI pacing,run_metadata.txt
+Placement,Game on LP 0; workers on LP 1-11; P_SHARED AI on LP 0; P_SMT AI on LP 1 (its worker parked); E_CORE AI on LP 12-18; telemetry on LP 19,run_metadata.txt
+Calibration,"180 s soak, then 338,571 loop iterations per frame (median 15.94 ms); sibling-parked reference 9.47 ms",calibrated_loops.txt
+Model grid,"Inputs 10, 100, 1000; hidden 32-512; layers 1, 2, 4, 8; agents 50, 100, 200; GRU, sequence length 10, ONNX opset 17","run_metadata.txt, training script"
+Design,"Main: 4 conditions x 180 configurations x 3 trials = 2,160 tests. Control: 2 conditions x 540 blocks = 1,080 tests. Block-randomized, seed 1337",run_metadata.txt
+Sampling,"At least 1,000 game frames and 50 AI batches per test (max 2,000); 50 ms AI tick; 300 s cap; PDH every 100 ms; HWiNFO every 2 s",run_metadata.txt
+Main session,"11 Oct 2026, tests 04:22-16:22 CDT; BASELINE, P_SHARED, P_SMT, E_CORE; 2,160 written, 0 skipped, exit code 0; HWiNFO per-core sensors stale under load",run_metadata.txt
+Control session,"12 Oct 2026, tests 00:58-04:44 CDT; P_SMT and SMT_IDLE (sibling parked, no AI) in the same 540 blocks; 1,080 written, 0 skipped, exit code 0; same calibration; HWiNFO refreshed every 2 s","run_metadata.txt, run_benchmark_log.txt"

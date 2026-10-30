@@ -1,0 +1,13 @@
+# Text files are stored with LF line endings
+* text=auto
+
+# Windows batch and solution files keep CRLF on checkout
+*.bat text eol=crlf
+*.sln text eol=crlf
+
+# Raw data and result tables are stored byte for byte
+*.csv -text
+*.CSV -text
+*.f32 binary
+*.gz binary
+*.png binary

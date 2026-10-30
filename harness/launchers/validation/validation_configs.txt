@@ -1,0 +1,18 @@
+# Validation session: 16 of the 180 configurations, one per line as inputs,hidden,layers,agents.
+# Work per batch (Eq. 1, MFLOP) and why each is included; latencies are main-session medians of P99.
+10,32,1,50       #     4  lightest configuration
+10,64,2,100      #    78  light, below 100 MFLOP
+1000,32,1,50     #    99  light, I = 1000
+100,128,1,100    #   175  shared LP still within 50 ms
+10,32,8,200      #   188  first shared-LP configuration over 50 ms
+100,256,1,100    #   547  shared LP mixed range
+10,512,1,50      #   802  last shared-LP configuration within 50 ms; H = 512
+100,64,8,200     #   814  E-cores P99 44.0 ms with a missed deadline
+1000,64,4,200    #  1112  E-cores P99 45.9 ms with missed deadlines
+10,256,2,100     #  1195  E-cores P99 44.4 ms with a missed deadline
+100,256,2,100    #  1333  E-cores P99 52.0 ms (the exception below 1,358 MFLOP)
+1000,256,2,50    #  1358  E-cores P99 49.3 ms with missed deadlines
+10,256,4,50      #  1384  E-cores just over 50 ms
+100,256,2,200    #  2667  SMT sibling P99 50.2 ms (the exception below 2,716 MFLOP)
+1000,256,2,100   #  2716  SMT sibling P99 45.3 ms, largest that fit
+1000,512,1,100   #  4645  saturated on every placement

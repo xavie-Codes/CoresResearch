@@ -1,0 +1,4 @@
+condition,control,session,session_hours,control_drift_ms,control_drift_pct,gap_median_s,gap_max_s,drift_over_max_gap_us,before_blocks,before_change_pct,before_ci_lo,before_ci_hi,after_blocks,after_change_pct,after_ci_lo,after_ci_hi
+E_CORE,BASELINE,main,11.99,0.201,1.25,28.2,159.6,0.74,260,0.8,0.65,0.9,280,0.67,0.5,0.87
+P_SMT,SMT_IDLE,control,3.77,0.012,0.13,10.8,43.4,0.04,252,16.49,11.26,23.32,288,17.26,9.28,27.25
+P_SHARED,BASELINE,main,11.99,0.201,1.25,33.0,211.6,0.98,253,37.26,28.41,72.84,287,38.28,22.21,67.18
